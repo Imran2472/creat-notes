@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    text-transform: capitalize;
+}
+body{
+    font-family: 'Merriweather Sans', sans-serif;
+    background: #efefef;
+}
+.buttons{
+    background: #000000;
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 600;
+    position: fixed;
+    bottom: 4rem;
+    right: 4rem;
+    outline: none;
+    border: none;
+    z-index: 999;
+    color: #ffff;
+}
+.buttons i{
+    display: none;
+}
+.buttons:hover{
+    background: #4d4e4c;
+    color: #ffff;
+}
+.notes_main{
+    /* height: 100vh; */
+    margin: 2.4rem 0;
+}
+.notes_main .notes .container-fluid .row{
+    padding: 0 4rem;
+}
+.notes_main .notes .container-fluid .row .col-md-4{
+    padding: .6rem;
+}
+.notes_main .notes .container-fluid .row .col-md-4 .card .line{
+    border: 1px solid black;
+    padding: .8rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: #000;
+
+}
+.notes_main .notes .container-fluid .row .col-md-4 .card .line i{
+    margin: 0 .5rem;
+    font-size: 1.2rem;
+    color: #ffff;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.notes_main .notes .container-fluid .row .col-md-4 .card .line i:hover{
+    color: #E2F516;
+}
+.notes_main .notes .container-fluid .row .col-md-4 .card{
+    border: 1px solid rgb(0,0,0,.4);
+}
+.notes_main .notes .container-fluid .row .col-md-4 .card #textarea{
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-transform: none;
+    resize: none;
+    height: 100%;
+    
+}
+@media (max-width:991px){
+    .notes_main .notes .container-fluid .row{
+        padding: 0 2rem;
+    }
+}
+@media (max-width:768px){
+    .notes_main .notes .container-fluid .row{
+        padding: 0 1rem;
+    }
+
+    .buttons{
+        height: max-content;
+       top:29rem;
+       right: 1rem;
+       width: 60px;
+       height: 60px;
+       border-radius: 50%;
+       background: #000;
+    }
+    .notes_main{
+        margin: 1.4rem 0;
+    }
+
+.buttons span{
+    display: none;
+}
+.buttons i{
+    display: block;
+    font-size: 1.5rem;
+    color: #ffff;
+}
+.notes_main .notes .container-fluid .row .col-md-4{
+    padding: .6rem 0;
+}
+.notes_main .notes .container-fluid .row .col-md-4 .card{
+    height: 17rem;
+}
+}
+@media (max-width:400px){
+    .notes_main .notes .container-fluid .row{
+        padding: 0 .5rem;
+    }
+}
